@@ -1,0 +1,78 @@
+html {
+	height: 100vh;
+}
+
+div {
+	/* Styled text to be center to page within divs */
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	position: inline;
+}
+
+.banner {
+	/* added padding to beef up banner */
+	padding: 200px;
+	margin: 0px 0px 0px 0px;
+}
+body {
+	/* made elements touch edges of window */
+	margin: 0px 0px 0px 0px;
+}
+
+#myName {
+	font-family: Verdana;
+	background-color:#999;
+	font-size: 30px;
+}
+
+#start-button {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	background-color: #999;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.sidenav {
+	/* Want full height */
+	height: 100%; 
+	width: 0; /*JS will change height*/
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #666;
+	overflow-x: hidden;
+	padding-top: 200px;
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav*/
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 30px;
+	color: #111;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+.closebtn {
+	position:absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px !important;
+	margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}

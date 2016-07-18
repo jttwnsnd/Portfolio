@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 	<head>
 		<title>JT Townsend</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="JT Portfolio.css"/>
 	</head>
 	<body>
-		<!-- Created a div for a header above menu -->
-		<div class="banner" id="myName">
-			<h3>JT Townsend</h3>
+		<nav>
+			
+		</nav>
+		<div class="container-fluid white spacer">
+			<div class="row">
+				<div class="col-xs-12">
+					
+				</div>
+			</div>
 		</div>
-		<!-- Nav bar menu -->
-		<div id="navMenu">
-				<!-- Listed elements that will be present in my portfolio -->
-			<span id="start-button"onclick="openNav ()">click here</span>
+		<div class="greeting" id="page-top">
+			<div class="container-fluid white">
+				<div class="row">
+					<div class="col-xs-6 col-xs-offset-3 text-center">
+						<h1>Hello.</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-2 col-xs-offset-5">
+						<!-- Greeting Button -->
+						<span class="btn text-center popup-interact" id="side-greet-button" onclick="openNav ('myGreet')">-click here-</span>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id="mySideNav" class="sidenav">
-			<a class="closebtn" href="javascript:void(0)" onclick="closeNav ()">&times;</a>
-			<a href="#">About Me</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
+		<!-- pop-up side greeting -->
+		<div id="myGreet" class="sidenav slate">
+			<!-- <a class="closebtn" href="javascript:void(0)" onclick="closeNav1 ()">&times;</a> -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2 style="color: white">My name's JT</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12" style="color: white; margin: 5%">
+								A full-stack web developer. Feel free to explore my site and see the various projects I have completed. Icons will appear and will show you around. You may also use the nav at the bottom of the page.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-2 col-offset-5">
+						<a href="#page-top" class="text-center inside popup-interact" onclick="closeNav ('myGreet')"><span style="color: white">-click here-</span></a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="main">
-			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 spacer"></div>
+				</div>
+			</div>
+			<div class="container-fluid spacer white">
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<h2 id="portfolio">Portfolio</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 buffer">
+						<div class="col-xs-4 text-center">project 1</div>
+						<div class="col-xs-4 text-center">project 2</div>
+						<div class="col-xs-4 text-center">project 3</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script type="text/javascript">
-			/* Set the width of the side navigation to 40% of page when opened */
-			function openNav() {
-			    document.getElementById("mySideNav").style.width = "40%";
+			/* Set the width of the side navigation to 98% of page when opened */
+			function openNav(id) {
+			    document.getElementById(id).style.width = "98%";
 			}
 
 			/* Set the width of the side navigation to 0 when closed */
-			function closeNav() {
-			    document.getElementById("mySideNav").style.width = "0";
+			function closeNav(id) {
+			    document.getElementById(id).style.width = "0";
 			}
 		</script>
 	</body>

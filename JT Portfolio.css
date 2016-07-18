@@ -2,6 +2,17 @@ html {
 	height: 100vh;
 }
 
+body{
+	font-family: Merriweather Sans, sans-serif;
+	background-image: url('https://thebupkis.files.wordpress.com/2013/03/pc099932a.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top center;
+	background-attachment: fixed;
+	background-filter: blur(20px);
+	margin: 0px 0px 0px 0px;
+}
+
 div {
 	/* Styled text to be center to page within divs */
 	text-align: center;
@@ -12,29 +23,76 @@ ul {
 	position: inline;
 }
 
+.white{
+	background-color: #FFFFFF;
+}
+
+.off-white{
+	background-color: #A9A9A9;
+	color: #dcdcdc;
+}
+
+.slate{
+	background-color: #2D2D2D;
+}
+
+.spacer{
+	height: 250px;
+	width: auto;
+	margin right: 0;
+	margin-left: 0;
+}
+
+.buffer{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.greeting h1 {
+	padding-top: 5%;
+	font-size: 200px;
+	margin: 0;
+}
+
 .banner {
 	/* added padding to beef up banner */
-	padding: 200px;
-	margin: 0px 0px 0px 0px;
-}
-body {
-	/* made elements touch edges of window */
-	margin: 0px 0px 0px 0px;
+	/* padding: 200px;
+	margin: 0px 0px 0px 0px; */
+	height: 500px;
+	width: 100%;
 }
 
 #myName {
-	font-family: Verdana;
+	/* font-family: Verdana;
 	background-color:#999;
-	font-size: 30px;
+	font-size: 30px; */
 }
 
-#start-button {
+.popup-interact {
 	display: inline-block;
-	width: 200px;
-	height: 50px;
-	background-color: #999;
 	text-align: center;
-	padding-top: 10px;
+	line-height: 100px;
+	opacity: 0.5;
+}
+
+#escape1{
+	width: 0;
+	height: 0;
+	z-index: 1;
+}
+
+.inside{
+	margin: 27%;
+}
+
+#myGreet {
+	top: 0;
+	left: 0;
+}
+
+#myPortfolio{
+	top: 0;
+	right: 0;
 }
 
 .sidenav {
@@ -43,25 +101,26 @@ body {
 	width: 0; /*JS will change height*/
 	position: fixed;
 	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #666;
 	overflow-x: hidden;
 	padding-top: 200px;
+	opacity: 0.9;
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav*/
+}
+.sidenav div{
+	display: inline-block;
+	width: 85%;
 }
 
 .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	font-size: 30px;
 	color: #111;
 	display: block;
 	transition: 0.3s;
 }
 
 .sidenav a:hover, .offcanvas a:focus {
-	color: #f1f1f1;
+	color: #666;
 }
 
 .closebtn {
@@ -72,7 +131,6 @@ body {
 	margin-left: 50px;
 }
 
-#main {
-	transition: margin-left .5s;
-	padding: 20px;
+div#main div.row div{
+	display: inline-block;
 }
